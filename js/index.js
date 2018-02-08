@@ -86,7 +86,7 @@ $(function() {
         if (video.currentTime >= 3) {
             video.pause();
             clearInterval(Vtimer);
-            $('.video-page').hide();
+            $('#video').hide();
             $('.end_page').fadeIn(2000);
         }
     }, 10);
