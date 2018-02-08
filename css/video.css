@@ -1,0 +1,208 @@
+html {
+    font-size: calc(100vw / 750 * 100);
+}
+
+.video-page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+}
+.video-page video {
+    width: 100%;
+   	height: 100%;
+    pointer-events: none;
+    object-fit: cover;
+    object-position: center top;
+}
+
+
+
+
+.start {
+	width: 4rem;
+    position: absolute;
+    left: 50%;
+    bottom: 1rem;
+    margin-left: -2rem;
+    height: 0.5rem;
+    border: 1px solid #33b4a0;
+    border-radius: 0.25rem;
+    background-color: rgba(0,0,0,0.3);
+    text-align: center;
+    color: #33b4a0;
+    line-height: 0.5rem;
+}
+
+
+
+.end_page {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 2;
+    background:#fefbe8 url(../images/video_bg.png) no-repeat center;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+.circle_top {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -0.54rem;
+    width: 1.07rem;
+    height: 3.4rem;
+    background: url(../images/circle_top.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+.circle {
+    box-sizing: border-box;
+    position: absolute;
+    top: 3.4rem;
+    left: 50%;
+    margin-left: -2.15rem;
+    width: 4.3rem;
+    height: 4.3rem;
+    border: 2px solid #33b4a0;
+    border-radius: 2.15rem;
+    text-align: center;
+    color: #f34a29;
+    font-size: 0.36rem;
+    line-height: 0.6rem;
+    font-weight: bold;
+    padding-top: 0.7rem;
+}
+
+.circle_bottom {
+    position: absolute;
+    top: 7.7rem;
+    left: 50%;
+    margin-left: -0.54rem;
+    width: 1.07rem;
+    height: 1.74rem;
+    background: url(../images/circle_bottom.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+.circle .logo img{
+	animation: wang 1s ease 1s infinite normal both;
+}
+.share-btn{
+	width: 4.2rem;
+	height: 0.5rem;
+	margin: 9.8rem auto 0 auto;
+	display:flex;
+	justify-content:space-between;
+}
+.share-btn .restart{
+	padding: 0 0.2rem;
+	background-color: #fefbe8;
+	font-size: 0.24rem;
+	color: #33b4a0;
+    line-height: 0.5rem;
+    border: 1px solid #33b4a0;
+}
+.share-btn .share{
+	padding: 0 0.2rem 0 0.6rem;
+	font-size: 0.24rem;
+	color: #fff;
+    line-height: 0.5rem;
+    background: #f56344 url(../images/share.png) no-repeat 0.2rem center;
+    background-size: 0.34rem 0.28rem;
+}
+
+.share-cover {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    background: url(../images/share_cover.png) no-repeat right top;
+    background-size: 3.43rem 3.19rem ;
+    background-color: rgba(24,25,29,0.9);
+}
+
+@keyframes wang{
+	20% {
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+40% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+60% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+80% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+}
+#pop {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 111;
+    position: absolute;
+    top: 0;
+}
+.border {
+    width: 6rem;
+    border: 1px solid #f2dc8a;
+    border-radius: 5px;
+    position: absolute;
+    top: 2.24rem;
+    left: 0.75rem;
+}
+.border img {
+    width: 100%;
+}
+
+.two {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: #fefbe8 url(../images/bg.png) no-repeat center;
+    background-size: 100% 100%;
+}
+.two img{
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    width: 3.3rem;
+    height: 7.8rem;
+    margin-left: -1.65rem;
+}
+.two .two-text{
+    position: absolute;
+    top: 9rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.two .two-text p{
+    
+    color: #f34a29;
+    font-size: 0.36rem;
+    line-height: 0.6rem;
+    font-weight: bold;
+}

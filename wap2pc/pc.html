@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="PC预览观看手机页面自适应" />
+    <title></title>
+    <style type="text/css">
+    body {
+        background-color: #f1f1f1;
+        margin: 0;
+        padding: 0;
+    }
+    
+    iframe {
+        display: block;
+        max-width: 62vh;
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+    }
+    
+    #erweima {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: calc(0px - 31vh - 100px);
+    }
+    </style>
+</head>
+
+<body>
+    <iframe id="iframeBorder" src="" scrolling="auto" frameborder="0" allowtransparency="true"></iframe>
+    <img src="" id="erweima" />
+    <script type="text/javascript">
+    var iframeUrl = decodeURI(GetQueryString("url"));
+    var title = decodeURI(GetQueryString("title"));
+    document.title = title;
+    var isOnPc = !(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent));
+    //isOnPc为true是电脑，为false是手机
+    if (isOnPc) {
+        document.getElementById("iframeBorder").src = iframeUrl;
+    } else {
+        location.href = iframeUrl;
+    }
+    document.getElementById("erweima").src = "http://qr.liantu.com/api.php?text=" + iframeUrl;
+    //获取url里带的参数的值
+    function GetQueryString(name) {
+	    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+	    var r = window.location.search.substr(1).match(reg);
+	    if (r != null) return decodeURI(r[2]);
+	    return null;
+	}
+    </script>
+</body>
+
+</html>

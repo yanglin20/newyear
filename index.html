@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>我的2018春节=？</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/common.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/video.css">
+    <script src="js/jQuery-2.1.4.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="js/index.js"></script>
+    <script>
+    (function(doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function() {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if (clientWidth <= 320) {
+                    docEl.style.fontSize = '42.666666666px';
+                } else if (clientWidth >= 750) {
+                    docEl.style.fontSize = '100px';
+                } else {
+                    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                }
+            };
+        recalc();
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+    })(document, window);
+    </script>
+</head>
+
+<body data-desc="选3个词，定制你的专属拜年视频。" data-img="http://src.zhids.cn/src.sp/video/5866f324ad3b2b77397cf6c62a5d88ba.jpg">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/logo.png" class="loading-zxm ani" swiper-animate-effect="tada2" swiper-animate-duration="1.5s" swiper-animate-delay="0s">
+                    <img src="images/loading_text.png" class="loading-text ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="1.5s">
+                    <!-- 向上滑动的指示 -->
+                    <div class="first_bottom">
+                        <div class="bottom_text"></div>
+                        <div class="hand move">
+                            <div class="bottom_line"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 1 在路上 -->
+                <div class="swiper-slide">
+                    <img src="images/2_title.png" class="road-title ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0">
+                    <img src="images/2_text.png" class="road-desc ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.4s">
+                    <img src="images/2_sun.png" class="road-sun ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.8s">
+                    <img src="images/2_pic.png" class="road-pic ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.8s">
+                    <div class="btn">选择</div>
+                </div>
+                <!-- 2 胖三斤 -->
+                <div class="swiper-slide">
+                    <img src="images/3_title.png" class="fat-title ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0">
+                    <div class="fat-yanhuo ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1s">
+                        <img src="images/yanhuo.png" class="ani" swiper-animate-effect="tada2" swiper-animate-duration="1s" swiper-animate-delay="0s">
+                    </div>
+                    <img src="images/3_text.png" class="fat-desc ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.4s">
+                    <img src="images/3_pic.png" class="fat-pic ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.8s">
+                    <div class="btn">选择</div>
+                </div>
+                <!-- 3 胡了 -->
+                <div class="swiper-slide">
+                    <img src="images/4_title.png" class="hu-title ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0">
+                    <img src="images/4_text.png" class="hu-desc ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.4s">
+                    <img src="images/4_pic.png" class="hu-pic ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.8s">
+                    <div class="btn">选择</div>
+                </div>
+                <!-- 4 走亲戚 -->
+                <div class="swiper-slide">
+                    <img src="images/5_title.png" class="go-title ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0">
+                    <img src="images/5_text.png" class="go-desc ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.4s">
+                    <img src="images/5_pic.png" class="go-pic ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.8s">
+                    <div class="btn">选择</div>
+                </div>
+                <!-- 5 求脱单 -->
+                <div class="swiper-slide">
+                    <img src="images/6_title.png" class="qiu-title ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0">
+                    <img src="images/6_text.png" class="qiu-desc ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.4s">
+                    <img src="images/6_pic.png" class="qiu-pic ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.8s">
+                    <div class="btn">选择</div>
+                </div>
+                <!-- 6 抢红包 -->
+                <div class="swiper-slide">
+                    <img src="images/7_title.png" class="qiang-title ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0">
+                    <img src="images/7_text.png" class="qiang-desc ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.4s">
+                    <img src="images/7_pic.png" class="qiang-pic ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.8s">
+                    <div class="btn">选择</div>
+                </div>
+                <!-- 7 发红包 -->
+                <div class="swiper-slide">
+                    <img src="images/8_title.png" class="fa-title ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0">
+                    <img src="images/8_text.png" class="fa-desc ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.4s">
+                    <img src="images/8_pic.png" class="fa-pic ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.8s">
+                    <div class="btn">选择</div>
+                </div>
+                <!-- 8 啪啪啪 -->
+                <div class="swiper-slide">
+                    <img src="images/9_title.png" class="pa-title ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0">
+                    <img src="images/9_text.png" class="pa-desc ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.4s">
+                    <img src="images/9_pic.png" class="pa-pic ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.8s">
+                    <div class="btn">选择</div>
+                </div>
+                <!-- 9 吐槽晚会 -->
+                <div class="swiper-slide">
+                    <img src="images/10_title.png" class="tu-title ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0">
+                    <img src="images/10_text.png" class="tu-desc ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.4s">
+                    <img src="images/10_pic.png" class="tu-pic ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.8s">
+                    <div class="btn">选择</div>
+                </div>
+                <!-- 10 老铁聚会 -->
+                <div class="swiper-slide">
+                    <div class="lao-yanhuo ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay="0.8s">
+                        <img src="images/yanhuo.png" class="ani" swiper-animate-effect="tada2" swiper-animate-duration="1s" swiper-animate-delay="0s">
+                    </div>
+                    <img src="images/11_title.png" class="lao-title ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0">
+                    <img src="images/11_text.png" class="lao-desc ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.4s">
+                    <img src="images/11_pic.png" class="lao-pic ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.8s">
+                    <div class="btn">选择</div>
+                </div>
+                <!-- 11 出去浪 -->
+                <div class="swiper-slide">
+                    <img src="images/12_title.png" class="chu-title ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0">
+                    <img src="images/12_text.png" class="chu-desc ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.4s">
+                    <img src="images/12_pic.png" class="chu-pic ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.8s">
+                    <div class="btn">选择</div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination swiper-pagination-white"></div> -->
+            <!--      <div class="swiper-pagination">
+            <span class="swiper-pagination-current"></span> /
+            <span class="swiper-pagination-total"></span>
+        </div> -->
+        </div>
+        <!-- 选择3个词 -->
+        <div class="top_bar">
+            <div class="name_text" style="">选择3个词生成我的2018春节</div>
+            <div class="name_box">
+            </div>
+            <div class="bar"></div>
+        </div>
+        <!-- 填写姓名 -->
+        <div class="name-input">
+            <div class="name-wrap">
+                <h4>告诉我你的名字呗</h4>
+                <div class="input-wrap">
+                    <input type="text">
+                </div>
+                <div class="video-btn">开始生成</div>
+            </div>
+        </div>
+
+    <div class="page2" style="display: none;">
+        <div class="video-page">
+            <video src="" id="video" preload="true" webkit-playsinline="true" playsinline="true" x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portraint"></video>
+            <div class="start">
+                我也要生成
+            </div>
+        </div>
+        <div class="end_page ">
+            <div class="circle_top"></div>
+            <div class="circle">
+                <p>狗年大吉,旺旺旺！</p>
+                <p><span id="name"></span></p>
+                <p>在这里给您拜年啦！</p>
+                <div class="logo">
+                    <img src="images/logo.png" style="width: 1rem;">
+                </div>
+            </div>
+            <div class="circle_bottom"></div>
+            <div class="share-btn">
+                <div class="restart">定制拜年视频</div>
+                <div class="share">去拜年咯！</div>
+            </div>
+            <div class="share-cover"></div>
+        </div>
+        <div class="two">
+            <img src="images/two.png" alt="">
+            <div class="two-text">
+                <p>关注一下下,</p>
+                <p>定制你自己的拜年视频哟~</p>
+            </div>
+        </div>
+        
+    </div>
+    <audio id="audio" autoplay preload loop="loop" src="images/keyword.mp3"></audio>
+    <audio id="audio1" loop="loop" src="images/video.mp3" autoplay="autoplay" preload=""></audio>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script src="js/sha1.js"></script>
+    <script src="js/sign.js"></script>
+    <script src="js/zds.js"></script>
+    <!-- <div style="display: none">
+        <script type="text/javascript">
+        var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cspan id='cnzz_stat_icon_1271939941'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1271939941%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+    </div> -->
+
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+        // spaceBetween: 10,
+        // effect: 'fade',
+        direction: 'vertical',
+        // pagination: {
+        //     el: '.swiper-pagination',
+        //     type: 'fraction',
+        // },
+        lazy: {
+            loadPrevNext: true,
+        },
+        on: {
+            init: function() {
+                swiperAnimateCache(this); //隐藏动画元素 
+                swiperAnimate(this); //初始化完成开始动画
+                $('.loading-text').show();
+            },
+            slideChangeTransitionEnd: function() {
+                swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+                if (mySwiper.activeIndex == 0) {
+                    // console.log(mySwiper.activeIndex);
+                    $('.loading-text').show();
+                }
+                // if (mySwiper.activeIndex > 0) {
+                //     $('.swiper-pagination').show();
+                //     $('.swiper-pagination-current').text(mySwiper.activeIndex);
+                //     $('.swiper-pagination-total').text('11');
+                // } else {
+                //     $('.swiper-pagination').hide();
+                // }
+            }
+        }
+    });
+    </script>
+</body>
+
+</html>

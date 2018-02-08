@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+    <script src="js/jQuery-2.1.4.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+   <!--  <script src="js/sha1.js"></script>
+    <script src="js/sign.js"></script> -->
+    <script>
+    $(function() {
+    	var url='http://qq.com/test/test.html';
+    	console.log(encodeURIComponent(url));
+        if (isWeiXin()) {
+            在微信中，判断微信是否授权，然后判断是否关注了公众号
+            Judge();
+
+        } else {
+            //微信打开提示
+            // $("#pop").html('<div class="border">请在微信客户端打开</div>').show();
+        }
+
+        function Judge() {
+            //没有去联通授权
+            if (!sub) {
+                console.log("没去联通授权");
+                // location.href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx34053f6127d45bb8&redirect_uri=http%3A%2F%2Fjswx7.unisk.cn%2FweixinLinksucaiController.do%3Flink%26id%3Dff8080815e337f3401606e1cffb7658a%26jwid%3Dgh_f0f070498613&response_type=code&scope=snsapi_base&state=STATE&connect_redirect=1#wechat_redirect";
+                return;
+
+
+            } else if (sub == "sub_0") {
+                //没有关注，弹出提示框
+                console.log("没有关注");
+                $("#pop").html('<div class="border"><img src="http://hudong.jstv.com/2017ltkn/gongzhonghao.png"/></div>').show();
+                return;
+            } else if (sub == "sub_1") {
+                console.log("关注了");
+            }
+
+        }
+    })
+
+    //判断是否是微信里浏览
+    function isWeiXin() {
+        var ua = window.navigator.userAgent.toLowerCase();
+        if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    function GetQueryString(name) {
+
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]);
+        return null;
+    }
+    </script>
+</head>
+<!-- http%3a%2f%2fm.zhids.cn%2fquestionnaire%2fquestion_2018nianzhongzongjie%2findex.html -->
+	<a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx2e28ada41a098c42&redirect_uri=http%3a%2f%2fm.zhids.cn%2fquestionnaire%2fquestion_2018nianzhongzongjie%2findex.html&response_type=code&scope=snsapi_base&state=STATE&connect_redirect=1#wechat_redirect">这是一个链接</a>
+    
+    <!-- <audio id="audio1" controls="" loop="loop" src="images/video.mp3" autoplay="autoplay" preload=""></audio> -->
+	<audio id="audio1" loop="loop" controls="" src="http://www.runoob.com/try/demo_source/horse.ogg" autoplay="autoplay" preload=""></audio>
+    <!-- <audio id="audio" controls="" autoplay="" preload="" loop="loop" src="images/video.mp3"></audio> -->
+<body>
+
+</body>
+
+</html>
